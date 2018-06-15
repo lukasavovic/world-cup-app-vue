@@ -17,11 +17,11 @@ export default {
    }
   },
   computed: {
-    teamsSortedAlfabetically: function() {
+    teamsSortedAlfabetically() {
       return this.teams.sort((a, b) => {
         if (a.name < b.name) {
           return -1;
-        };
+        }
         if (a.name > b.name) {
           return 1;
         }

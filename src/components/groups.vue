@@ -2,14 +2,19 @@
   
 <div>
     <h1>Groups</h1>
-    <router-link to="/singleGroup/A">Group A</router-link>
-    <div v-for="team in teams" :key="team.id" v-if="team.group == 'A'">
-         <router-link :to="'/singleTeam/' + team.id" v-text="team.name"></router-link>
+    <div class="group">
+        <router-link to="/singleGroup/A">Group A</router-link>
+        <div v-for="team in teams" :key="team.id" v-if="team.group == 'A'" class="groupTeams">
+            <router-link :to="'/singleTeam/' + team.id" v-text="team.name"></router-link>
+        </div>
     </div>
-    <router-link to="/singleGroup/B">Group B</router-link>
-    <div v-for="team in teams" :key="team.id" v-if="team.group == 'B'">
-        <router-link :to="'/singleTeam/' + team.id" v-text="team.name"></router-link>
-    </div>
+   <div class="group">
+        <router-link to="/singleGroup/B">Group B</router-link>
+        <div v-for="team in teams" :key="team.id" v-if="team.group == 'B'">
+            <router-link :to="'/singleTeam/' + team.id" v-text="team.name"></router-link>
+        </div>
+   </div>
+    
      <router-link to="/singleGroup/B">Group C</router-link>
     <div v-for="team in teams" :key="team.id" v-if="team.group == 'C'">
         <router-link :to="'/singleTeam/' + team.id" v-text="team.name"></router-link>
@@ -38,4 +43,12 @@ export default {
     display: block;
     padding: 10px;
  }
+ .group{
+     margin-top: 50px;
+    .groupTeams {
+     width: 70%;
+     margin: 0 auto;
+     }
+ }
+ 
 </style>
