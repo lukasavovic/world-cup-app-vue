@@ -55,9 +55,10 @@ export default {
   },
   mounted () {
     this.axios
-      .get('http://api.myjson.com/bins/15uwue')
+      .get('https://api.myjson.com/bins/15uwue')
       .then(response => (this.teams = response.data))
       // https://api.myjson.com/bins/15uwue
+      // https://api.myjson.com/bins/1fna12
   }
 }
 </script>
