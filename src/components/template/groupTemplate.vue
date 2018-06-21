@@ -50,6 +50,14 @@ mounted(){
     if (a.pts < b.pts) {
       return 1;
     }
+    if (a.pts == b.pts) {
+        if(a.gd > b.gd) {
+            return -1;
+        }
+        if(a.gd < b.gd) {
+            return 1
+        }
+    }
   });
 }
 }
