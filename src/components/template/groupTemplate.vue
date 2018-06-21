@@ -11,7 +11,7 @@
             <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].d"></h1>
             <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].l"></h1>
             <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].gd"></h1>
-            <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].pts"></h1>
+            <h1 v-if="points[team.id - 1].id === team.id" v-text="team.pts"></h1>
         </div>
     </div>
 </template>
@@ -23,30 +23,39 @@ export default {
        teams: {
         type: Array,
         required: true
-        },
-        matches:{
+    },
+    matches:{
         type: Array,
         required: true
-        },
-        points:{
+    },
+    points:{
         type: Array,
         required: true
-        },
-        grupa: {
+    },
+    grupa: {
         type: Object,
         required: true
-        },
     },
-    data(){
-        return{
-            
-        }
+},
+data(){
+    return{
+      msg: 'hello'  
+  }
+},
+mounted(){
+    return this.teams.sort((a, b) => {
+    if (a.pts > b.pts) {
+      return -1;
     }
-
+    if (a.pts < b.pts) {
+      return 1;
+    }
+  });
+}
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+// Add "scoped" attribute to limit CSS to this component only
 <style lang='scss'>
 
 </style>
