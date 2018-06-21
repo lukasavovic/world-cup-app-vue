@@ -1,15 +1,15 @@
 <template>
-  <div>
+ <div>
     <h1>Upcoming matches</h1>
     <div v-for="match in matches" :key="match.id" class="match">
-      <img src="https://cdn.britannica.com/42/3842-004-C238EDD3.jpg" alt="">
+      <img :src="teams[match.team1Id-1].flag" alt="">
       <router-link :to="'/singleTeam/' + team.id" v-for="team in teams" v-if="team.id == match.team1Id" :key="team.id" v-text="team.name"></router-link>
       <div class="results">
         <p>{{match.team1GoalsFulltime}} : {{match.team2GoalsFulltime}}</p>
         <p class="half">HT {{match.team1GoalsHalf}} : {{match.team2GoalsHalf}}</p>
       </div>
       <router-link :to="'/singleTeam/' + team.id" v-for="team in teams" v-if="team.id == match.team2Id" :key="team.id" v-text="team.name"></router-link>
-      <img src="https://cdn.britannica.com/79/5779-004-491EE13C.jpg" alt="">
+      <img :src="teams[match.team2Id-1].flag" alt="">
     </div>
   </div>
 </template>
