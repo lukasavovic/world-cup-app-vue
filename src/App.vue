@@ -534,10 +534,10 @@ body{
   background-color: #f1f1f1c7;
   color: #0533e9;
   h1{
-    color: #38618C;
+    color: rgb(31, 35, 39);
   }
   p {
-    color: rgb(52, 87, 156);
+    color: #2f3635;
   }
   a {
     color: rgb(46, 46, 46);
@@ -548,9 +548,9 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  $main-color: #1240f7;
-  $main-color-two: #2B2D39; 
-  $font-color: rgb(36, 36, 36);
+  $main-color: #343538;
+  $main-color-two: rgb(41, 41, 41); 
+  $font-color: rgb(29, 29, 29);
   color: $font-color;
   a {
     padding:20px 0;

@@ -49,7 +49,7 @@ export default {
   align-items: center;
   width: 40%;
   margin: 0 auto;
-  background-color: rgba(142, 172, 238, 0.137);
+  background-color: #cfcfcf21;
   margin-top: 20px;
   .matchDetails {
     display: flex;
@@ -58,7 +58,7 @@ export default {
     align-items: center;
     padding: 0 10px;
     height: 100%;
-    border-right: 1px solid #38618C;
+    border-right: 1px solid #00a886;
     h3 {
     padding: 0;
     padding-right: 5px;
@@ -80,7 +80,7 @@ export default {
       a{
         width: 100%;
         padding: 10px;
-        font-size: 25px;
+        font-size: 20px;
         color: rgb(8, 51, 97) !important;
       }
   }

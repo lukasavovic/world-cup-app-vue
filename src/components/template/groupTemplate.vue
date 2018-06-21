@@ -14,7 +14,7 @@
             <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].d"></h1>
             <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].l"></h1>
             <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].gd"></h1>
-            <h1 v-if="points[team.id - 1].id === team.id" v-text="team.pts"></h1>
+            <h1 class="points" v-if="points[team.id - 1].id === team.id" v-text="team.pts"></h1>
         </div>
     </div>
 </template>
@@ -64,5 +64,8 @@ mounted(){
         width: 40px;
         float: left;
         padding: 10px;
+    }
+    .points {
+        color: #21a17f;
     }
 </style>
