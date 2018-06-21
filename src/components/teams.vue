@@ -2,6 +2,7 @@
   <div class="teamTable">
     <h1>Teams</h1>
     <div v-for="team in teams" :key="team.id">
+      <img :src="team.flag" alt="">
       <router-link :to="'/singleTeam/' + team.id" v-text="team.name"></router-link>
     </div>
   </div>
@@ -51,6 +52,14 @@ mounted(){
   }
   h1 {
     grid-column: 1/5;
+  }
+  div {
+    align-items: center;
+    display: flex;
+    img {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
   

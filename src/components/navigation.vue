@@ -16,7 +16,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang='scss' scoped>
     nav {
-        background-color: #203440;
+        background-color: #38618C;
         padding: 10px;
         display: flex;
         justify-content: center;
@@ -25,6 +25,7 @@ export default {
         a {
             display: block;
             margin: 0 20px;
+            color: #fff !important;
             padding: 20px !important;
         }
         img {

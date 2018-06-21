@@ -6,7 +6,10 @@
         </div>
         <hr>
         <div v-for="team in teams" :key="team.id" v-if="team.group == grupa.Gindex" class="groupTeams">
-            <router-link :to="'/singleTeam/' + team.id" v-text="team.name" class="teamNameGroup"></router-link>
+            <div>
+                <img :src="team.flag" alt="">
+                <router-link :to="'/singleTeam/' + team.id" v-text="team.name" class="teamNameGroup"></router-link>
+            </div>
             <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].w"></h1>
             <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].d"></h1>
             <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].l"></h1>
@@ -50,14 +53,6 @@ mounted(){
     if (a.pts < b.pts) {
       return 1;
     }
-    if (a.pts == b.pts) {
-        if(a.gd > b.gd) {
-            return -1;
-        }
-        if(a.gd < b.gd) {
-            return 1
-        }
-    }
   });
 }
 }
@@ -65,5 +60,9 @@ mounted(){
 
 // Add "scoped" attribute to limit CSS to this component only
 <style lang='scss'>
-
+    img {
+        width: 40px;
+        float: left;
+        padding: 10px;
+    }
 </style>

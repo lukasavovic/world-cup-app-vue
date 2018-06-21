@@ -54,7 +54,7 @@ export default {
      margin: 0 auto;
     .groupTeams{
      display: grid;
-     grid-template-columns: 3fr repeat(5, 1fr);
+     grid-template-columns: 2fr repeat(5, 1fr);
      .teamNameGroup {
          font-size: 25px;
      }
@@ -64,7 +64,7 @@ export default {
     }
     .groupHeading {
         display: grid;
-        grid-template-columns: 3fr repeat(5, 1fr);
+        grid-template-columns: 2fr repeat(5, 1fr);
         h1 {
             font-size: 20px;
         }

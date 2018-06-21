@@ -19,7 +19,7 @@ export default {
       {
         "id":1,
         "name":"Russia",
-        "flag":"../assets/flag/russiaF.png",
+        "flag":"https://image.ibb.co/njH2Po/russiaF.png",
         "group":"A",
         "fifaRanking":70,
         "coach":"STANISLAV CHERCHESOV",
@@ -28,7 +28,7 @@ export default {
       {
         "id":2,
         "name":"Uruguay",
-        "flag":"../assets/flag/urugayF.png",
+        "flag":"https://image.ibb.co/iOyLAT/urugayF.png",
         "group":"A",
         "fifaRanking":14,
         "coach":"HÉCTOR CÚPER",
@@ -37,7 +37,7 @@ export default {
       {
         "id":3,
         "name":"Egypt",
-        "flag":"../assets/flag/egyptF.png",
+        "flag":"https://image.ibb.co/mkiyx8/egyptF.png",
         "group":"A",
         "fifaRanking":45,
         "coach":"OSCAR WASHINGTON TABAREZ",
@@ -46,7 +46,7 @@ export default {
       {
         "id":4,
         "name":"Saudi Arabia",
-        "flag":"../assets/flag/saudiarabiaF.png",
+        "flag":"https://image.ibb.co/ntmJx8/saudiarabia_F.png",
         "group":"A",
         "fifaRanking":67,
         "coach":"JUAN ANTONIO PIZZI",
@@ -55,7 +55,7 @@ export default {
       {
         "id":5,
         "name":"Portugal",
-        "flag":"../assets/flag/portugalF.png",
+        "flag":"https://image.ibb.co/jukYVT/portugal_F.png",
         "group":"B",
         "fifaRanking":4,
         "coach":"FERNANDO SANTOS",
@@ -64,7 +64,7 @@ export default {
       {
         "id":6,
         "name":"Spain",
-        "flag":"../assets/flag/spainF.png",
+        "flag":"https://image.ibb.co/kGdbjo/spainF.png",
         "group":"B",
         "fifaRanking":10,
         "coach":"FERNANDO HIERRO",
@@ -73,7 +73,7 @@ export default {
       {
         "id":7,
         "name":"Morocco",
-        "flag":"../assets/flag/moroccoF.png",
+        "flag":"https://image.ibb.co/mP9hPo/moroccoF.png",
         "group":"B",
         "fifaRanking":41,
         "coach":"HERVÉ RENARD",
@@ -82,7 +82,7 @@ export default {
       {
         "id":8,
         "name":"IR Iran",
-        "flag":"./assets/flag/iranF.png",
+        "flag":"https://image.ibb.co/fe394o/iranF.png",
         "group":"B",
         "fifaRanking":37,
         "coach":"CARLOS QUEIROZ",
@@ -91,7 +91,7 @@ export default {
       {
         "id":9,
         "name":"France",
-        "flag":"./assets/flag/franceF.png",
+        "flag":"https://image.ibb.co/fe394o/iranF.png",
         "group":"C",
         "fifaRanking":7,
         "coach":"DIDIER DESCHAMPS",
@@ -100,7 +100,7 @@ export default {
       {
         "id":10,
         "name":"Australia",
-        "flag":"./assets/flag/australiaF.png",
+        "flag":"https://image.ibb.co/ehtbjo/australia_F.png",
         "group":"C",
         "fifaRanking":36,
         "coach":"BERT VAN MARWIJK",
@@ -109,7 +109,7 @@ export default {
       {
         "id":11,
         "name":"Peru",
-        "flag":"./assets/flag/peruF.png",
+        "flag":"https://image.ibb.co/k2fdx8/peruF.png",
         "group":"C",
         "fifaRanking":11,
         "coach":"RICARDO GARECA",
@@ -118,7 +118,7 @@ export default {
       {
         "id":12,
         "name":"Denmark",
-        "flag":"./assets/flag/denmarkF.png",
+        "flag":"https://image.ibb.co/czFBH8/denmarkF.png",
         "group":"C",
         "fifaRanking":12,
         "coach":"AGE HAREIDE",
@@ -127,7 +127,7 @@ export default {
       {
         "id":13,
         "name":"Argentina",
-        "flag":"./assets/flag/argentinaF.png",
+        "flag":"https://image.ibb.co/eUxfAT/argentina_F.png",
         "group":"D",
         "fifaRanking":5,
         "coach":"JORGE SAMPAOLI",
@@ -136,7 +136,7 @@ export default {
       {
         "id":14,
         "name":"Iceland",
-        "flag":"./assets/flag/icelandF.png",
+        "flag":"https://image.ibb.co/h47rH8/icelandF.png",
         "group":"D",
         "fifaRanking":22,
         "coach":"HEIMIR HALLGRIMSSON",
@@ -145,7 +145,7 @@ export default {
       {
         "id":15,
         "name":"Croatia",
-        "flag":"./assets/flag/croatiaF.png",
+        "flag":"https://image.ibb.co/mzbJx8/croatiaF.png",
         "group":"D",
         "fifaRanking":20,
         "coach":"ZLATKO DALIC",
@@ -154,7 +154,7 @@ export default {
       {
         "id":16,
         "name":"Nigeria",
-        "flag":"./assets/flag/nigeriaF.png",
+        "flag":"https://image.ibb.co/d3S2Po/nigeriaF.png",
         "group":"D",
         "fifaRanking":48,
         "coach":"GERNOT ROHR",
@@ -163,7 +163,7 @@ export default {
       {
         "id":17,
         "name":"Brazil",
-        "flag":"./assets/flag/brazilF.png",
+        "flag":"https://image.ibb.co/iiOLAT/brazilF.png",
         "group":"E",
         "fifaRanking":2,
         "coach":"TITE",
@@ -172,7 +172,7 @@ export default {
       {
         "id":18,
         "name":"Switzerland",
-        "flag":"./assets/flag/switzerlandF.png",
+        "flag":"https://image.ibb.co/dTD94o/switzerland_F.png",
         "group":"E",
         "fifaRanking":6,
         "coach":"VLADIMIR PETKOVIC",
@@ -181,7 +181,7 @@ export default {
       {
         "id":19,
         "name":"Costa Rica",
-        "flag":"./assets/flag/costaricaF.png",
+        "flag":"https://image.ibb.co/dOaBH8/costarica_F.png",
         "group":"E",
         "fifaRanking":23,
         "coach":"OSCAR RAMIREZ",
@@ -190,7 +190,7 @@ export default {
       {
         "id":20,
         "name":"Serbia",
-        "flag":"./assets/flag/serbiaF.png",
+        "flag":"https://image.ibb.co/mdvYVT/serbiaF.png",
         "group":"E",
         "fifaRanking":34,
         "coach":"MLADEN KRSTAJIC",
@@ -199,7 +199,7 @@ export default {
       {
         "id":21,
         "name":"Germany",
-        "flag":"./assets/flag/germanyF.png",
+        "flag":"https://image.ibb.co/dg0p4o/germanyF.png",
         "group":"F",
         "fifaRanking":1,
         "coach":"JOACHIM LOW",
@@ -208,7 +208,7 @@ export default {
       {
         "id":22,
         "name":"Mexico",
-        "flag":"./assets/flag/mexicoF.png",
+        "flag":"https://image.ibb.co/hPAYVT/mexicoF.png",
         "group":"F",
         "fifaRanking":15,
         "coach":"JUAN CARLOS OSORIO",
@@ -217,7 +217,7 @@ export default {
       {
         "id":23,
         "name":"Sweden",
-        "flag":"./assets/flag/sweedenF.png",
+        "flag":"https://image.ibb.co/gQv0AT/sweedenF.png",
         "group":"F",
         "fifaRanking":24,
         "coach":"JANNE ANDERSSON",
@@ -226,7 +226,7 @@ export default {
       {
         "id":24,
         "name":"Korea Republic",
-        "flag":"./assets/flag/koreaF.png",
+        "flag":"https://image.ibb.co/nPLp4o/koreaF.png",
         "group":"F",
         "fifaRanking":57,
         "coach":"SHIN TAE-YONG",
@@ -235,7 +235,7 @@ export default {
       {
         "id":25,
         "name":"Belgium",
-        "flag":"./assets/flag/belgiumF.png",
+        "flag":"https://image.ibb.co/moo94o/belgiumF.png",
         "group":"G",
         "fifaRanking":3,
         "coach":"ROBERTO MARTINEZ",
@@ -244,7 +244,7 @@ export default {
       {
         "id":26,
         "name":"Panama",
-        "flag":"./assets/flag/panamaF.png",
+        "flag":"https://image.ibb.co/cADbjo/panamaF.png",
         "group":"G",
         "fifaRanking":55,
         "coach":"HERNAN DARIO GOMEZ",
@@ -253,7 +253,7 @@ export default {
       {
         "id":27,
         "name":"Tunisia",
-        "flag":"./assets/flag/tunisiaF.png",
+        "flag":"https://image.ibb.co/cKYnqT/tunisiaF.png",
         "group":"G",
         "fifaRanking":21,
         "coach":"NABIL MAÂLOUL",
@@ -262,7 +262,7 @@ export default {
       {
         "id":28,
         "name":"England",
-        "flag":"./assets/flag/englandF.png",
+        "flag":"https://image.ibb.co/ifJ94o/englandF.png",
         "group":"G",
         "fifaRanking":12,
         "coach":"GARETH SOUTHGATE",
@@ -271,7 +271,7 @@ export default {
       {
         "id":29,
         "name":"Poland",
-        "flag":"./assets/flag/polandF.png",
+        "flag":"https://image.ibb.co/hpXrH8/polandF.png",
         "group":"H",
         "fifaRanking":8,
         "coach":"ADAM NAWALKA",
@@ -280,7 +280,7 @@ export default {
       {
         "id":"30",
         "name":"Senegal",
-        "flag":"./assets/flag/senegalF.png",
+        "flag":"https://image.ibb.co/hdxQc8/senegalF.png",
         "group":"H",
         "fifaRanking":27,
         "coach":"ALIOU CISSÉ",
@@ -289,7 +289,7 @@ export default {
       {
         "id":31,
         "name":"Colombia",
-        "flag":"./assets/flag/columbiaF.png",
+        "flag":"https://image.ibb.co/nr4SqT/columbia_F.png",
         "group":"H",
         "fifaRanking":16,
         "coach":"JOSÉ PÉKERMAN",
@@ -298,7 +298,7 @@ export default {
       {
         "id":32,
         "name":"Japan",
-        "flag":"./assets/flag/japanF.png",
+        "flag":"https://image.ibb.co/gL8yx8/japanF.png",
         "group":"H",
         "fifaRanking":61,
         "coach":"AKIRA NISHINO",
@@ -531,39 +531,39 @@ export default {
 body{
   margin: 0;
   padding: 0;
-  background-color: #162b38;
-  color: #333951;
+  background-color: #f1f1f1c7;
+  color: #0533e9;
   h1{
-    color: #3BA182;
+    color: #38618C;
   }
   p {
-    color: #D3D5D9;
+    color: rgb(52, 87, 156);
   }
   a {
-    color: #fff;
+    color: rgb(46, 46, 46);
   }
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-
-  font-family: 'Source Sans Pro', sans-serif;  
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  $main-color: #333951;
+  $main-color: #1240f7;
   $main-color-two: #2B2D39; 
-  $font-color: rgb(212, 213, 214);
+  $font-color: rgb(36, 36, 36);
   color: $font-color;
   a {
     padding:20px 0;
     text-decoration: none;
     color: $font-color;
     &:hover {
-      color: #CEC8B8;
+      color: #38618C;
     }
   }
 }
 </style>
+
+
 
 
 
