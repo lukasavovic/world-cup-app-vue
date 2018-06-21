@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Upcoming matches</h1>
+    <hr>
     <div v-for="match in matches" :key="match.id" class="match">
       <div class="matchDetails">
         <h3 v-text="match.date"></h3>
@@ -41,15 +42,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang='scss' scoped>
-
+h1{
+  width: 40%;
+  margin: 50px auto;
+}
+hr {
+  width: 65%;
+}
 .match {
+  border-radius: 8px;
   display: grid;
   grid-template-columns: 1fr 8fr 3fr 8fr;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 55%;
   margin: 0 auto;
-  background-color: #cfcfcf21;
+  background-color: #b4b4b415;
   margin-top: 20px;
   .matchDetails {
     display: flex;
@@ -58,13 +66,14 @@ export default {
     align-items: center;
     padding: 0 10px;
     height: 100%;
-    border-right: 1px solid #00a886;
+    border-right: 1px solid #001242;
     h3 {
     padding: 0;
     padding-right: 5px;
     margin: 0;
-    color: rgba(56, 97, 140, 0.89);
+    color: rgba(0, 18, 58, 0.89);
     font-size: 15px;
+    font-weight: normal;
     }
   }
   div {
@@ -79,9 +88,14 @@ export default {
       }
       a{
         width: 100%;
+        font-weight: bolder;
         padding: 10px;
         font-size: 20px;
         color: rgb(8, 51, 97) !important;
+        &:hover {
+          // text-decoration: underline !important;
+          color: #fcc650 !important;
+        }
       }
   }
   .team1 {
@@ -102,7 +116,7 @@ export default {
     display: flex;
     flex-direction: column;
     p {
-      font-size: 24px;
+      font-size: 22px;
       margin: 5px 0 5px 0;
       font-weight: bold;
     }

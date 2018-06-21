@@ -6,6 +6,7 @@
 </template>
 
 <script>
+
 import navigation from './components/navigation.vue';
 
 export default {
@@ -91,7 +92,7 @@ export default {
       {
         "id":9,
         "name":"France",
-        "flag":"https://image.ibb.co/fe394o/iranF.png",
+        "flag":"https://image.ibb.co/hvrJx8/franceF.png",
         "group":"C",
         "fifaRanking":7,
         "coach":"DIDIER DESCHAMPS",
@@ -427,6 +428,127 @@ export default {
         team2GoalsFulltime: 1,
         date: '15.6.2018.',
         time: "14:00",
+      },
+      {
+        id: 1011,
+        team1Id: 23,
+        team2Id: 24,
+        team1GoalsHalf: 1,
+        team2GoalsHalf: 0,
+        team1GoalsFulltime: 1,
+        team2GoalsFulltime: 0,
+        date: '15.6.2018.',
+        time: "14:00",
+      },
+      {
+        id: 1012,
+        team1Id: 25,
+        team2Id: 26,
+        team1GoalsHalf: 0,
+        team2GoalsHalf: 0,
+        team1GoalsFulltime: 3,
+        team2GoalsFulltime: 0,
+        date: '15.6.2018.',
+        time: "14:00",
+      },
+      {
+        id: 1013,
+        team1Id: 27,
+        team2Id: 28,
+        team1GoalsHalf: 0,
+        team2GoalsHalf: 1,
+        team1GoalsFulltime: 1,
+        team2GoalsFulltime: 2,
+        date: '15.6.2018.',
+        time: "14:00",
+      },
+      {
+        id: 1014,
+        team1Id: 29,
+        team2Id: 30,
+        team1GoalsHalf: 0,
+        team2GoalsHalf: 1,
+        team1GoalsFulltime: 1,
+        team2GoalsFulltime: 2,
+        date: '15.6.2018.',
+        time: "14:00",
+      },
+      {
+        id: 1015,
+        team1Id: 1,
+        team2Id: 3,
+        team1GoalsHalf: 1,
+        team2GoalsHalf: 0,
+        team1GoalsFulltime: 3,
+        team2GoalsFulltime: 1,
+        date: '15.6.2018.',
+        time: "14:00",
+      },
+      {
+        id: 1016,
+        team1Id: 2,
+        team2Id: 4,
+        team1GoalsHalf: 1,
+        team2GoalsHalf: 0,
+        team1GoalsFulltime: 1,
+        team2GoalsFulltime: 0,
+        date: '15.6.2018.',
+        time: "14:00",
+      },
+      {
+        id: 1017,
+        team1Id: 5,
+        team2Id: 7,
+        team1GoalsHalf: 1,
+        team2GoalsHalf: 0,
+        team1GoalsFulltime: 1,
+        team2GoalsFulltime: 0,
+        date: '15.6.2018.',
+        time: "14:00",
+      },
+      {
+        id: 1018,
+        team1Id: 6,
+        team2Id: 8,
+        team1GoalsHalf: 1,
+        team2GoalsHalf: 1,
+        team1GoalsFulltime: 2,
+        team2GoalsFulltime: 1,
+        date: '15.6.2018.',
+        time: "14:00",
+      },
+      {
+        id: 1019,
+        team1Id: 9,
+        team2Id: 11,
+        team1GoalsHalf: 1,
+        team2GoalsHalf: 0,
+        team1GoalsFulltime: 1,
+        team2GoalsFulltime: 0,
+        date: '21.6.2018.',
+        time: "14:00",
+      },
+      {
+        id: 1020,
+        team1Id: 10,
+        team2Id: 12,
+        team1GoalsHalf: 1,
+        team2GoalsHalf: 1,
+        team1GoalsFulltime: 1,
+        team2GoalsFulltime: 1,
+        date: '21.6.2018.',
+        time: "17:00",
+      },
+      {
+        id: 1021,
+        team1Id: 13,
+        team2Id: 15,
+        team1GoalsHalf: 0,
+        team2GoalsHalf: 0,
+        team1GoalsFulltime: 0,
+        team2GoalsFulltime: 3,
+        date: '21.6.2018.',
+        time: "20:00",
       }
 
       ]
@@ -528,10 +650,12 @@ export default {
 </script>
 
 <style lang='scss'>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
 body{
+      transition: 0.2s all ease-out;
   margin: 0;
   padding: 0;
-  background-color: #f1f1f1c7;
+  background-color: #ffffffe8;
   color: #0533e9;
   h1{
     color: rgb(31, 35, 39);

@@ -66,6 +66,10 @@ mounted(){
         padding: 10px;
     }
     .points {
-        color: #21a17f;
+        color: #fcc650 !important;
+    }
+    hr {
+        color: #fcc650 !important;        
+        border-color: #fcc650 !important;
     }
 </style>
