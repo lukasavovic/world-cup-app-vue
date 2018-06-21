@@ -488,7 +488,7 @@ body{
   }
 }
 #app {
-  // font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
 
   font-family: 'Source Sans Pro', sans-serif;  
   -webkit-font-smoothing: antialiased;
