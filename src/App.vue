@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <navigation></navigation>
-    <router-view :teams="teams" :matches="matches" :points="points"></router-view>
+    <router-view :teams="teams" :news="news" :matches="matches" :points="points"></router-view>
   </div>
 </template>
 
@@ -16,7 +16,8 @@ export default {
   },
   data() {
     return{
-      teams:[
+    news: {},
+    teams:[
       {
         "id":1,
         "name":"Russia",
@@ -553,6 +554,11 @@ export default {
 
       ]
     }
+  },
+  mounted(){
+    this.axios
+    .get('https://newsapi.org/v2/top-headlines?sources=bbc-sport&apiKey=bc3b629e1e774fc5917957962aad6a9f')
+    .then(response => (this.news = response.data))
   },
   beforeMount () {
     this.populatePointsArray();
