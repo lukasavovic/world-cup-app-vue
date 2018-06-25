@@ -5,16 +5,16 @@
             <h1 class="teamNameGroup">Team</h1> <h1>W</h1> <h1>D</h1> <h1>L</h1> <h1>GD</h1> <h1>Pts</h1>
         </div>
         <hr>
-        <div v-for="team in teams" :key="team.id" v-if="team.group == grupa.Gindex" class="groupTeams">
+        <div v-for="team in allTeams" :key="team.id" v-if="team.group == grupa.Gindex" class="groupTeams">
             <div>
                 <img :src="team.flag" alt="">
                 <router-link :to="'/singleTeam/' + team.id" v-text="team.name" class="teamNameGroup"></router-link>
             </div>
-            <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].w"></h1>
-            <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].d"></h1>
-            <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].l"></h1>
-            <h1 v-if="points[team.id - 1].id === team.id" v-text="points[team.id -1].gd"></h1>
-            <h1 class="points" v-if="points[team.id - 1].id === team.id" v-text="team.pts"></h1>
+            <h1 v-text="points[team.id -1].w"></h1>
+            <h1 v-text="points[team.id -1].d"></h1>
+            <h1 v-text="points[team.id -1].l"></h1>
+            <h1 v-text="points[team.id -1].gd"></h1>
+            <h1 class="points" v-text="team.pts"></h1>
         </div>
     </div>
 </template>
@@ -42,11 +42,12 @@ export default {
 },
 data(){
     return{
-      msg: 'hello'  
+      allTeams: '',
   }
 },
 mounted(){
-    return this.teams.sort((a, b) => {
+    this.allTeams = this.teams;
+    return this.allTeams.sort((a, b) => {
     if (a.pts > b.pts) {
       return -1;
     }

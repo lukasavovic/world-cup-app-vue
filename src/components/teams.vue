@@ -1,7 +1,7 @@
 <template>
   <div class="teamTable">
     <h1>Teams</h1>
-    <div v-for="team in teams" :key="team.id">
+    <div v-for="team in allTeams" :key="team.id">
       <img :src="team.flag" alt="">
       <router-link :to="'/singleTeam/' + team.id" v-text="team.name"></router-link>
     </div>
@@ -24,7 +24,8 @@ data(){
   }
 },
 mounted(){
-  return this.teams.sort((a, b) => {
+  this.allTeams = this.teams;
+  return this.allTeams.sort((a, b) => {
     if (a.name < b.name) {
       return -1;
     }
