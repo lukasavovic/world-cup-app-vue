@@ -308,7 +308,7 @@ export default {
       }
       ],
       points:[],
-      matches: [
+    matches: [
       {
         id: 1000,
         team1Id: 1,

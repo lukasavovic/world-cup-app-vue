@@ -1,9 +1,9 @@
 <template>
     <nav>
         <div class="navWrapper">
-            <img src="../assets/logo.png" alt="logo">
-            <router-link to="/">Home</router-link>
-            <router-link to="/matches">Matches</router-link>
+            <!-- <img src="../assets/logo.png" alt="logo"> -->
+            <!-- <router-link to="/">Home</router-link> -->
+            <router-link to="/">Matches</router-link>
             <router-link to="/groups">Groups</router-link>
             <router-link to="/teams">Teams</router-link>
         </div>
@@ -30,7 +30,7 @@ export default {
         top: 0;
         .navWrapper{
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-around;
             width: 60%;
             margin: 0 auto;
             h4{

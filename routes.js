@@ -9,8 +9,8 @@ import singleTeam from './src/components/singleTeam.vue';
 
 export default new VueRouter({
     routes: [
-      { path: '/', component: home,props: true },
-      { path: '/matches', component: matches,props: true },
+      { path: '/home', component: home,props: true },
+      { path: '/', component: matches,props: true },
       { path: '/groups', component: groups, props: true },
       { path: '/singleGroup/:group', component: singleGroup,props: true },
       { path: '/teams', component: teams,props: true},
