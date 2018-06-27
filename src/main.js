@@ -7,7 +7,7 @@ Vue.prototype.axios = axios
 
 Vue.config.productionTip = false
 
-window.Event = new Vue();
+window.EventBus = new Vue();
 
 //router
 window.Vue = Vue;

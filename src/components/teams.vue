@@ -24,7 +24,12 @@ data(){
   }
 },
 mounted(){
-  this.allTeams = this.teams;
+
+  EventBus.$on('something', (data) => {
+    this.allTeams = data;
+    console.log(data)
+  });
+  // this.allTeams = this.teams;
   return this.allTeams.sort((a, b) => {
     if (a.name < b.name) {
       return -1;
@@ -33,10 +38,7 @@ mounted(){
       return 1;
     }
   });
-},
-  // beforeCreate() {
-  //     
-  // },
+}
 }
 </script>
 

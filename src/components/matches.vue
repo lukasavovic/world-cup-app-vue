@@ -38,17 +38,19 @@ export default {
   beforeCreate(){
     this.axios
     .get('https://api.myjson.com/bins/bf70e')
-    .then(response => (this.Teams = response.data))
-    this.$root.$emit('eventing', this.Teams);
+    .then(response => {
+      this.Teams = response.data
+      setTimeout(()=> {
+        EventBus.$emit('something', response.data);
+      }, 2000)
+       
+    });
+    //this.$root.$emit('eventing', this.Teams);
+   
    },
    beforeDestroy(){
     this.$root.$emit('eventing', this.Teams);
    },
-   methods: {
-     listen(){
-      
-     }
-   }
 }
 </script>
 
