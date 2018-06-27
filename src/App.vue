@@ -560,6 +560,9 @@ export default {
     .get('https://newsapi.org/v2/top-headlines?sources=bbc-sport&apiKey=bc3b629e1e774fc5917957962aad6a9f')
     .then(response => (this.news = response.data))
   },
+  created(){
+    
+  },
   beforeMount () {
     this.populatePointsArray();
     this.calculatePoints();
