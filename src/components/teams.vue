@@ -1,7 +1,7 @@
 <template>
   <div class="teamTable">
     <h1>Teams</h1>
-    <div v-for="team in allTeams" :key="team.id">
+    <div v-for="team in teams" :key="team.id">
       <img :src="team.flag" alt="">
       <router-link :to="'/singleTeam/' + team.id" v-text="team.name"></router-link>
     </div>
@@ -11,26 +11,22 @@
 <script>
 export default {
   name: 'teams',
-  props: {
-   teams: {
-    type: Array,
-    required: true
-  }
-},
 data(){
   return {
-    allTeams: '',
+    teams: '',
     loaded: false
   }
 },
-mounted(){
-
-  EventBus.$on('something', (data) => {
-    this.allTeams = data;
-    console.log(data)
+beforeCreate(){
+  this.axios
+  .get('https://api.myjson.com/bins/bf70e')
+  .then(response => {
+  this.teams = response.data
   });
-  // this.allTeams = this.teams;
-  return this.allTeams.sort((a, b) => {
+},
+watch:{
+    loaded:function(){
+        return this.teams.sort((a, b) => {
     if (a.name < b.name) {
       return -1;
     }
@@ -38,7 +34,8 @@ mounted(){
       return 1;
     }
   });
-}
+    }
+},
 }
 </script>
 
@@ -48,23 +45,45 @@ mounted(){
   display:grid;
   width:80%;
   margin: 0 auto;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   a {
     display: block;
     font-size: 25px;
   }
   h1 {
-    grid-column: 1/5;
+    grid-column: 1/5
   }
   div {
     align-items: center;
-    display: flex;
+    // display: flex;
     img {
       width: 40px;
       height: 40px;
     }
   }
 }
+@media (max-width: 968px) {
+  .teamTable {
+  width:80%;
+  grid-template-columns: 1fr 1fr;
+    h1 {
+      grid-column: 1/3
+    }
+  }
+}
+@media (max-width: 668px) {
+  .teamTable {
+  width:100%;
+  grid-template-columns: 1fr 1fr;
+    h1 {
+      grid-column: 1/3
+    }
+    div {
+      border: 1px solid black;
+    }
+  }
+}
+
   
 </style>
 

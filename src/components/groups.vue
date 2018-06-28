@@ -2,7 +2,7 @@
   
 <div>
     <h1>Groups</h1>
-    <group :teams="teams" :groups="groups" :matches="matches" :points="points"  :index="index" v-for="(grupa,index) in groups" :key="grupa.id" v-bind:grupa="grupa"></group>
+    <group  :index="index" v-for="(grupa,index) in groups" :key="grupa.id" v-bind:grupa="grupa"></group>
 </div>
 
  
@@ -17,20 +17,6 @@ export default {
   name: 'groups',
   components: {
     group
-  },
-  props: {
-     teams: {
-        type: Array,
-        required: true
-    },
-    matches:{
-        type: Array,
-        required: true
-    },
-    points:{
-        type: Array,
-        required: true
-    }
   },
   data(){
       return {
@@ -73,5 +59,16 @@ export default {
 .teamNameGroup {
     text-align: start;
 }
- 
+@media (max-width: 768px) {
+  .group{
+      width: 100%;
+        .groupHeading {
+        display: grid;
+        grid-template-columns: 2fr repeat(5, 1fr);
+        h1 {
+            font-size: 15px;
+        }
+        }
+  }
+}
 </style>

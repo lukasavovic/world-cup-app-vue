@@ -50,5 +50,12 @@ export default {
           color: #fcc650 !important;
         }
       }
-
+  @media (max-width: 768px) {
+.matchDetails {
+  a {
+      font-size: 10px !important;
+      padding: 0;
+  }
+}
+}
 </style>

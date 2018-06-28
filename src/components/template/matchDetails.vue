@@ -36,4 +36,12 @@ export default {
     font-weight: normal;
     }
   }
+    @media (max-width: 768px) {
+.matchDetails {
+  h3 {
+      font-size: 10px;
+      padding: 0;
+  }
+}
+}
 </style>

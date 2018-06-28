@@ -26,7 +26,7 @@ export default {
         padding: 10px;
         align-items: center;
         font-size: 15px;
-        position: sticky;
+        // position: sticky;
         top: 0;
         .navWrapper{
             display: flex;
@@ -38,7 +38,6 @@ export default {
             }
             a {
                 display: block;
-                margin: 0 70px;
                 align-self: center;
                 color: #fff !important;
                 padding: 20px !important;

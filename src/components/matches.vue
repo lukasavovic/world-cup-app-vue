@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>Upcoming matches</h1>
+    <h1>Matches</h1>
     <hr>
     <div v-for="match in matches" :key="match.id" class="match">
       <match-details :match="match"></match-details>
-      <match-team  v-for="team in Teams" :key="team.id" v-if="team.id == match.team1Id" class="team1" :team="team"></match-team>
+      <match-team  v-for="team in teams" :key="team.id" v-if="team.id == match.team1Id" class="team1" :team="team"></match-team>
       <match-result :match="match"></match-result>
-      <match-team  v-for="team in Teams" :key="team.id" v-if="team.id == match.team2Id" class="team1" :team="team"></match-team>
+      <match-team  v-for="team in teams" :key="team.id" v-if="team.id == match.team2Id" class="team1" :team="team"></match-team>
     </div>
   </div>
 </template>
@@ -26,30 +26,24 @@ export default {
   },
   data(){
     return {
-      Teams : 'hello'
+      teams : '',
+      matches: '',
     }
   },
-  props: {
-     matches: {
-      type: Array,
-      required: true
-     }
-  },
-  beforeCreate(){
+  beforeMount(){
     this.axios
     .get('https://api.myjson.com/bins/bf70e')
     .then(response => {
-      this.Teams = response.data
-      setTimeout(()=> {
-        EventBus.$emit('something', response.data);
-      }, 2000)
-       
+    this.teams = response.data   
+    });
+    this.axios
+    .get('https://api.myjson.com/bins/6kzem')
+    .then(response => {
+    this.matches = response.data   
     });
     //this.$root.$emit('eventing', this.Teams);
+    // https://api.myjson.com/bins/6kzem
    
-   },
-   beforeDestroy(){
-    this.$root.$emit('eventing', this.Teams);
    },
 }
 </script>
@@ -78,5 +72,10 @@ hr {
     display: grid;
  
   }
+}
+@media (max-width: 868px) {
+.match {
+  width: 100%;
+}
 }
 </style>

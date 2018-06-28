@@ -14,12 +14,18 @@
 <script>
 export default {
     name: 'singleTeam',
-    props: {
-     teams: {
-        type: Array,
-        required: true
-     }
-    }
+    data(){
+        return{
+            teams: [],
+        }
+    },
+   beforeMount(){
+  this.axios
+  .get('https://api.myjson.com/bins/bf70e')
+  .then(response => {
+  this.teams = response.data
+  });
+}
 }
 </script>
 
