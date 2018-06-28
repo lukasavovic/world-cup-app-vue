@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <navigation></navigation>
-    <router-view :news="news" :points="points"></router-view>
+    <router-view ></router-view>
   </div>
 </template>
 
@@ -14,12 +14,18 @@ export default {
   components: {
     navigation
   },
-  data() {
-    return{
-    news: {},
-    points:[],
-    }
-  }
+  mounted(){
+    this.axios
+    .get('https://api.myjson.com/bins/bf70e')
+    .then(response => {
+    localStorage.setItem('teams', JSON.stringify(response.data))
+    });
+    this.axios
+    .get('https://api.myjson.com/bins/6kzem')
+    .then(response => {
+    localStorage.setItem('matches', JSON.stringify(response.data))
+    });
+  },
 }
 
 </script>

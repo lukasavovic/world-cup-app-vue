@@ -13,25 +13,6 @@ export default {
   components: {
     group
   },
-  props: {
-     teams: {
-        type: Array,
-        required: true
-    },
-    matches:{
-        type: Array,
-        required: true
-    },
-    points:{
-        type: Array,
-        required: true
-    }
-  },
-  data(){
-      return {   
-        
-      }
-  },
   computed:{
     groupIndexReturn(){
       var groups = [{id: 1, Gindex:this.$route.params.group}];

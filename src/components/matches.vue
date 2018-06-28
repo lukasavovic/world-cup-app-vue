@@ -26,25 +26,14 @@ export default {
   },
   data(){
     return {
-      teams : '',
+      teams : [],
       matches: '',
     }
   },
-  beforeMount(){
-    this.axios
-    .get('https://api.myjson.com/bins/bf70e')
-    .then(response => {
-    this.teams = response.data   
-    });
-    this.axios
-    .get('https://api.myjson.com/bins/6kzem')
-    .then(response => {
-    this.matches = response.data   
-    });
-    //this.$root.$emit('eventing', this.Teams);
-    // https://api.myjson.com/bins/6kzem
-   
-   },
+  mounted(){
+    this.teams = JSON.parse(localStorage.getItem('teams'));
+    this.matches = JSON.parse(localStorage.getItem('matches'));
+  }
 }
 </script>
 

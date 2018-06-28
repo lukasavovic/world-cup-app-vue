@@ -19,7 +19,7 @@
 
 <script>
 export default {
-    name: 'singleTeam',
+    name: 'news',
     data(){
         return{      
         news: "",
